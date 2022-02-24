@@ -1,6 +1,6 @@
 # Paul Coops's Portfolio 2022
 
-[View Portfolio](paulcoops.github.io)
+[View Portfolio](https://paulcoops.github.io)
 
 
 ## Acknowledgments 
