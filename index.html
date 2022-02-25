@@ -265,7 +265,20 @@
 	
 </script>
 
+<script src="assets/javascript/scramble.min.js"></script>
+
 <script type="text/javascript">
+	var colour = "green";
+
+	if (availableHours <= 8)
+		{ colour = "red "}
+	else if (availableHours <= 24)
+		{ colour = "amber"};
+
+	let avalibility = document.getElementById("available-ammount");
+	avalibility.className = colour;
+
+
 	let body = document.getElementsByTagName("BODY")[0];
 	let arrow = document.getElementById("arrow");
 	var rellax = new Rellax('.rellax');
@@ -277,26 +290,15 @@
 	window.onload = (event) => {
   		body.className = "show";
   		arrow.classList.add("blink");
+		Scramble.select("#available-ammount")
+		.setConfig({delay: 100})
+		.setText("~" + availableHours + " hour/week")
+		.descramble();
 	};
 </script>
 
-<script src="assets/javascript/scramble.min.js"></script>
 <script>
-	var colour = "green";
 
-	if (availableHours <= 8)
-		{ colour = "red "}
-	else if (availableHours <= 24)
-		{ colour = "amber"};
-
-	let e = document.getElementById("available-ammount");
-
-	e.className = colour;
-
-	Scramble.select("#available-ammount")
-	.setConfig({delay: 100})
-	.setText("~" + availableHours + " hour/week")
-	.descramble();
 </script>
 
 </body>
