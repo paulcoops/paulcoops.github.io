@@ -1,0 +1,232 @@
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Lucida Grande", "Segoe UI";
+	background-color: #000;
+	color: #FF6600;
+	background-image: url('../img/BG.png');
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 16px;
+	margin: 0;
+}
+a {
+	color: #ff6600;
+}
+a:hover {
+	color: #ffAA00;
+	border-color: #ffAA00;
+}
+
+#header{
+	position: fixed;
+	display: flex;
+	z-index: 999;
+	top: 8pt;
+	left: 8pt;
+	background-color: rgba(0,0,0,0.6);
+}
+#header h1{
+	margin: 0;
+	font-weight: 200;
+}
+.readmeBox{
+	display: flex;
+	align-content: center;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.link{
+	align-self: flex-end;
+}
+#readme{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 8pt;
+	max-width: 480pt;
+	line-height: 200%;
+}
+li {
+	line-height: 200%;
+}
+.image{
+	width: 90vw;
+	height: 100%;
+	border-radius: 8pt;
+	border-width: 2pt;
+	border-color: #ff6600;
+	border-style: solid;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation-name: pulseBorder;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+.image.fresh {
+	animation-name: pulseBorderFresh;
+}
+
+.button {
+	background-color: #ff6600;
+	color: #FFFF00;
+	border-color: rgba(50,0,0,0.20);
+	border-style: solid;
+	border-width: 2pt;
+	border-radius: 8pt;
+	text-decoration: none;
+	padding: 6pt 12pt;
+	/* offset-x | offset-y | blur-radius | color */
+	/*box-shadow: 0px 1px 16px rgba(0,0,0,0.4);*/
+	align-self: center;
+}
+a.button:hover {
+	color: #ff6600;
+	background-color: #FCCF32;
+}
+.fotorama {
+	box-shadow: inset 0px 0px 76px -22px rgba(0,0,0,0.75);
+}
+.fotorama__thumb {
+	opacity: 0.8;
+	border-radius: 3pt;
+}
+.fotorama__thumb:hover {
+	opacity: 1;
+}
+.fotorama__thumb-border{
+	border-color: #ff6600;
+	border-style: solid;
+	border-radius: 3pt;
+	background-image: none;
+	/* animation-name: pulse;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out; */
+}
+.back {
+	margin: 0pt 4pt;
+	width: 64pt;
+	height: 48pt;
+	background-image: url('img/ICON.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: fixed;
+	z-index: 999;
+}
+.slide{
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-top: 16pt;
+	margin-left: 8pt;
+	height: 100%;
+	color: rgba(255,102,0,0.8);
+}
+.main {
+	/*margin-top: -32pt;*/
+	align-self: flex-end;
+}
+.slide .overlay {
+	display: flex;
+	flex-direction: column;
+	}
+.slide h1 {
+	background-color: rgba(0,0,0,0.6);
+	text-transform: uppercase;
+	margin: 0;
+	padding: 0;
+	align-self: flex-start;
+}
+.slide h2 {
+	background-color: rgba(0,0,0,0.6);
+	margin: 0;
+	padding: 0;
+	align-self: flex-start;
+	font-weight: 300;
+}
+.info{
+	position: absolute;
+}
+.header {
+	display: flex;
+	flex-direction: column;
+}
+#nav{
+	display: flex;
+	justify-content: space-between;
+}
+h1 {
+	font-size: 24pt;
+	font-weight: 600;
+}
+h2{
+	font-size: 18pt;
+	margin: 0;
+	font-weight: 600;
+}
+a {
+	font-size: 14pt;
+	font-weight: 600;
+	text-decoration: none;
+	border-width: 0;
+	border-bottom-width: 2pt;
+	border-radius: 2pt;
+	border-color: #ff6600;
+	border-style: solid;
+	margin: 8pt;
+}
+p {
+	font-size: 14pt;
+	font-weight: 400;
+}
+.now{
+	color: rgba(252,207,50,1.0);
+}
+.topnav {
+	position: fixed;
+	margin: 8pt 0pt;
+	right: 0pt;
+	z-index: 999;
+}
+.nav, .action {
+	display: flex;
+	align-items: center;
+}
+.nav {
+	justify-content: space-around;
+	padding: 0;
+	padding-top: 64pt;
+}
+.action {
+	justify-content: space-between;
+}
+.footer {
+	margin-top: 64pt;
+	margin-bottom: 32pt;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+.footer p {
+	font-size: 10pt;
+}
+.paul {
+	font-size: 14pt;
+	border-style: solid;
+	border-width: 2pt;
+	border-radius: 3pt;
+	border-color: #ff6600;
+	color: #ff6600;
+	text-decoration: none;
+	font-weight: 600;
+	padding: 8pt 12pt;
+}
+.paul:hover {
+	border-color: #ffcc00;
+}
