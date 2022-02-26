@@ -27,7 +27,6 @@
 </head>
 <body>
 	<!-- Avalibility 
-	-->
 	<article>
 		<section id="avalibility">
 			<p id="lastModified">Hilversum,  </p>
@@ -51,6 +50,7 @@
 
 		</section>
 	</article>
+	-->
 
 	<!-- portfolio
 	 -->
@@ -68,7 +68,9 @@
 			<h2>HTML/CSS/Javascript</h2>
 			<h2>Swift</h2>
 			<h2>C++</h2>
+			<!-- 
 			<p>Experienced in designing and implementing hypermedia and graphical user interfaces, Paul is concise and consistent, open to learn new programming languages and particularly interested in VR/AR/XR.</p>
+			 -->
 		</section>
 		<!-- Concept Development
 		 -->
@@ -237,13 +239,14 @@
 		</section>
 	</footer>
 <!-- Custom scripts -->
-<!-- add last modified date -->
+<!-- add last modified date
 <script type="text/javascript">
 	let paragraph = document.getElementById("lastModified");
 	let date = new Date(document.lastModified);
 	let text = document.createTextNode(date.toDateString());
 	paragraph.appendChild(text);
 </script>
+ -->
 
 <!-- randomize image size, z-depth and parallax speed -->
 <script type="text/javascript">
@@ -261,8 +264,14 @@
 		image.style.transform = "scale(" + randomSize + ")";
 	});
 	
+	let body = document.getElementsByTagName("BODY")[0];
+	window.onload = (event) => {
+  		body.className = "show";
+  	}
+
 </script>
 
+<!-- 
 <script src="assets/javascript/scramble.min.js"></script>
 
 <script type="text/javascript">
@@ -277,7 +286,6 @@
 	avalibility.className = colour;
 
 
-	let body = document.getElementsByTagName("BODY")[0];
 	let arrow = document.getElementById("arrow");
 	var rellax = new Rellax('.rellax');
 	document.onreadystatechange = function () {
@@ -294,6 +302,7 @@
 		.descramble();
 	};
 </script>
+ -->
 
 </body>
 </html>
