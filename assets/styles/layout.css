@@ -1,6 +1,6 @@
 /* Using the CSS Flexible Box Layout Module */
 /* https://www.w3.org/TR/css-flexbox-1/ */
-body, article, section, header, footer, .examples, #mail { display: flex; }
+body, article, section, header, footer, .examples { display: flex; }
 body, section, header, footer { flex-direction: column; }
 article, .examples { flex-wrap: wrap; }
 article, .examples { 
@@ -8,13 +8,6 @@ article, .examples {
 	justify-content: space-evenly; 
 }
 footer { align-items: center; }
-
-#mail { 
-	justify-content: space-between;
-	align-items: baseline;
-}
-
-#mailLink { flex-grow: 1; }
 
 /* Position */
 
@@ -45,7 +38,7 @@ body		{ font-size: 16px; } /* Base size: 1em */
 h1.massive 			{ font-size: 5.332em;  }
 h1 					{ font-size: 2.666em;  }
 h2 					{ font-size: 1.333em;  }
-h3, p, nav, #mailLink 	{ font-size: 1em;  }
+h3, p, nav		 	{ font-size: 1em;  }
 
 p 			{ line-height: 1.333em; }
 h1, h2, h3 	{ line-height: 1em; }
@@ -77,16 +70,15 @@ ul {
 	padding: 1em;
 }
 
+nav a {
+	padding: 0.5em 1em;
+}
+
 #graphic-design, section .visual { padding-bottom: 0; }
-#avalibility ul { padding: 1em 0; }
 
 @media only screen and (max-width: 600px) {
 	body 	{ margin: 0.0em; }
 	section { padding: 4vh 0vw; }
-}
-
-nav a, #mailLink {
-	padding: 0.5em 1em;
 }
 
 @media (prefers-color-scheme: light) {
@@ -94,7 +86,5 @@ nav a, #mailLink {
 		margin: 0 .5em;
 	}
 }
-
-#mailLink { margin: 0 2vh 0 0; }
 
 footer { margin-top: 8em; }

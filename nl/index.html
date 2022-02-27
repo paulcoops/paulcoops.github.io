@@ -5,7 +5,6 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="alternate" hreflang="en" href="../index.html" />
 	<title>Portfolio 2022 - Paul Coops</title>
-	<script type="text/javascript">let availableHours = 16;</script>
 	<meta name="author" content="Paul Coops">
 	<meta name="description" content="Bekijk Paul's portfolio en beschikbaarheid - Zeer ervaren digitale creatieveling. Voegt waarde toe aan merkproposities met interactieve audiovisuele ervaringen.">
 	<meta name="robots" content="index, follow, max-image-preview:large">
@@ -25,32 +24,6 @@
 	<script type="text/javascript" src="../assets/javascript/rellax.min.js"></script>
 </head>
 <body>
-	<!-- Avalibility 
-	<article>
-		<section id="avalibility">
-			<p id="lastModified">Hilversum,  </p>
-			<h1>Beschikbaar</h1>
-			<h2 id="available-ammount">|</h2>
-
-			<ul>
-				<li class="ready">Brainstorm nieuwe media en digitale producten </li>
-				<li class="ready">Concept- en softwareontwikkeling</li>
-				<li class="ready">UX-ontwerp / UI-prototypen</li>
-				<li class="ready">Kunst en creatieve richting </li>
-				<li class="ready">Geluid en visueel ontwerp </li>
-				<li class="ready">Teamleider</li>
-			</ul>
-			<div id="mail">
-				<h1 id="arrow" class="detail">↘</h1>
-				<a href="mailto:mail@paulcoops.com" id="mailLink">
-					E-mail paul@paulcoops.com
-				</a>
-			</div>
-
-		</section>
-	</article>
-	-->
-
 	<!-- portfolio
 	 -->
 	<article>
@@ -60,6 +33,7 @@
 				Volg Paul op GitHub  ↗
 			</a>
 		</nav>		
+		
 		<!-- intro
 		 -->
 		<section>
@@ -67,10 +41,8 @@
 			<h2>HTML/CSS/Javascript</h2>
 			<h2>Swift</h2>
 			<h2>C++</h2>
-			<!-- 
-			<p>Paul heeft ervaring met het ontwerpen en implementeren van hypermedia en grafische gebruikersinterfaces, is beknopt en consistent, staat open om nieuwe programmeertalen te leren en is vooral geïnteresseerd in VR/AR/XR. </p>
-			 -->
 		</section>
+
 		<!-- Concept Development
 		 -->
 		<section class="visual">
@@ -90,6 +62,7 @@
 				<li><img src="../assets/images/paulcoops_yamaha_motors_europe_yfz450_press_event.png" alt="Persevenement van Yamaha Motors Europe" loading="lazy"></li>
 			</ul>
 		</section>
+
 		<!-- Creative direction
 		 -->
 		<section class="visual">
@@ -110,6 +83,7 @@
 				<li><img src="../assets/images/paulcoops_asics_onitsuka_tiger_made_of_japan.png" alt="Onitsuka Tiger online campaign (made of japan)"></li>
 			</ul>
 		</section>
+
 		<!-- Graphic design
 		 -->
 		<section>
@@ -127,7 +101,6 @@
 			</ul>
 		</section>
 	</article>
-
 
 	<!-- Résumé 
 	-->
@@ -198,6 +171,7 @@
 
 		</section>
 	</article>
+
 	<!-- About Paul 
 	-->
 	<article>
@@ -227,24 +201,16 @@
 			</ul>
 			<h3>Javascript</h3>
 			<ul>
-				<li>Scramble: <a href="https://github.com/turtleDev/scramblejs" target="_blank" rel="nofollow">Scramble js</a></li>
 				<li>Parallax: <a href="https://dixonandmoe.com/rellax/" target="_blank" rel="nofollow">Rellax js</a></li>
 			</ul>
 		</section>
-			<p class="detail">Deze pagina wordt gehost op GitHub. <a href="https://github.com/paulcoops/paulcoops.github.io">Bekijk de bron</a></p>
-		</section>
-		</section>
 			<p class="detail"><a href="../index.html" lang="en" title="Engelse versie">English Version</a></p>
+		</section>
+		</section>
+			<p class="detail">Deze pagina wordt gehost op GitHub. <a href="https://github.com/paulcoops/paulcoops.github.io">Bekijk de bron</a></p>
 		</section>
 	</footer>
 <!-- Custom scripts -->
-<!-- add last modified date -->
-<script type="text/javascript">
-	let paragraph = document.getElementById("lastModified");
-	let date = new Date(document.lastModified);
-	let text = document.createTextNode(date.toDateString());
-	paragraph.appendChild(text);
-</script>
 
 <!-- randomize image size, z-depth and parallax speed -->
 <script type="text/javascript">
@@ -261,46 +227,18 @@
 		image.style.zIndex = zIndex;
 		image.style.transform = "scale(" + randomSize + ")";
 	});
-	
-	let body = document.getElementsByTagName("BODY")[0];
-	window.onload = (event) => {
-  		body.className = "show";
-  	}
-
 </script>
 
-<!-- 
-<script src="../assets/javascript/scramble.min.js"></script>
-
 <script type="text/javascript">
-	var colour = "green";
-
-	if (availableHours <= 8)
-		{ colour = "red "}
-	else if (availableHours <= 24)
-		{ colour = "amber"};
-
-	let avalibility = document.getElementById("available-ammount");
-	avalibility.className = colour;
-
-
-	let arrow = document.getElementById("arrow");
+	let body = document.getElementsByTagName("BODY")[0];
 	var rellax = new Rellax('.rellax');
 	document.onreadystatechange = function () {
 		if (document.readyState === 'complete') {
 			rellax.refresh(); 
+			body.className = "show";
 		}
 	}
-	window.onload = (event) => {
-  		body.className = "show";
-  		arrow.classList.add("blink");
-		Scramble.select("#available-ammount")
-		.setConfig({delay: 100})
-		.setText("~" + availableHours + " uur/week")
-		.descramble();
-	};
 </script>
- -->
 
 </body>
 </html>
