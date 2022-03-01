@@ -9,51 +9,49 @@
 }
 
 @font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 100;
-  font-display: swap;
-  src: local('Inter'), url(../typography/Inter-Thin.woff2) format('woff2');
+	font-family: 'Inter';
+	font-style:  normal;
+	font-weight: 100;
+	font-display: swap;
+	src: local('Inter'), url(../typography/Inter-Thin.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Inter'), url(../typography/Inter-Regular.woff2) format('woff2');
+	font-family: 'Inter';
+	font-style:  normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Inter'), url(../typography/Inter-Regular.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'Inter';
-  font-style:  normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local('Inter'), url(../typography/Inter-Bold.woff2) format('woff2');
+	font-family: 'Inter';
+	font-style:  normal;
+	font-weight: 600;
+	font-display: swap;
+	src: local('Inter'), url(../typography/Inter-Bold.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'Inter';
-  font-style:  italic;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Inter'), url(../typography/Inter-Italic.woff2) format('woff2');
+	font-family: 'Inter';
+	font-style:  italic;
+	font-weight: 400;
+	font-display: swap;
+	src: local('Inter'), url(../typography/Inter-Italic.woff2) format('woff2');
 }
 
 :root {
-	--green: 				rgb(160,224,0);
-	--amber: 				rgb(225,160,0);
-	--red: 					rgb(196,0,48);
-	--white:				rgb(250,250,250);
-	--white-transparent:	rgb(250,250,250,0.8);
-	--black:				rgb(8,8,8);
-	--black-transparent:	rgb(8,8,8,0.8);
+	--green: rgb(160,224,0);
+	--amber: rgb(225,160,0);
+	--red: rgb(196,0,48);
+	--white: rgb(250,250,250);
+	--white-transparent: rgb(250,250,250,0.8);
+	--black: rgb(8,8,8);
+	--black-transparent: rgb(8,8,8,0.8);
 }
 
 @media (prefers-color-scheme: light) {
-	:root {
-		--green: 				rgb(138,193,0);
-	}
+	:root {	--green: rgb(138,193,0); }
 }
 
 strong { font-weight: 600; }
@@ -61,8 +59,7 @@ strong { font-weight: 600; }
 /* reset */
 nav a { text-decoration: none; }
 
-h1, h2, h3
-{
+h1, h2, h3 { 
 	font-family: 'Basement Grotesque';
 	font-weight: 800;
 	text-transform: uppercase;
@@ -70,21 +67,19 @@ h1, h2, h3
 	word-break: break-word;
 }
 
-h1.detail, h2.detail
-{
+h1.detail, h2.detail {
 	font-family: 'Inter';
 	font-weight: 100;
 }
 
-li {
-	font-weight: 600;
-}
+li { font-weight: 600; }
 
 p.detail { font-style: italic; }
 
 body { font-family: 'Inter'; }
 
-nav a { font-weight: 600;
+nav a { 
+	font-weight: 600;
 	text-align: center;
 }
 
@@ -94,9 +89,8 @@ nav a { font-weight: 600;
 .amber { color: var(--amber); }
 .red   { color: var(--red);  }
 
-/* Always dark on old devices/browsers */
-
-/* Dark mode */
+/* Dark theme */
+/* Always dark on old browsers */
 
 body {
 	background-color: var(--black);
@@ -124,8 +118,10 @@ footer h2 {
 	-webkit-text-stroke: 1px var(--white);
 }
 
-
 @media (prefers-color-scheme: light) {
+
+/* Bright theme */
+	
 	body {
 		color: rgb(8,8,8);
 		background-color: var(--white);
@@ -135,10 +131,10 @@ footer h2 {
 		color: var(--black);
 		text-shadow: none;
 	}
-	 
+
 	nav a:active {
-		color: var(--black);
-		background-color: var(--white);
+		color: var(--white);
+		background-color: var(--black);
 	}
 
 	a {
@@ -146,15 +142,11 @@ footer h2 {
 		background-color: var(--white-transparent);
 		color: var(--black);
 	}
-
 }
-
-p.detail { opacity: 0.8; }
 
 /* borders */
 
 .round img { border-radius: 50%; }
-
 
 nav a { border-radius: 2em; }
 
@@ -166,11 +158,12 @@ nav a {
 
 p {	border-radius: 1em; }
 
-
 /* style */
+
 .examples li { list-style: none; }
 li { list-style-type: square; }
 
+p.detail { opacity: 0.8; }
 
 body {
 	opacity: 0;
@@ -188,6 +181,6 @@ body {
 }
 
 @keyframes fadeIn {
-   0% {opacity: 0;}
-   100% {opacity: 1;}
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }

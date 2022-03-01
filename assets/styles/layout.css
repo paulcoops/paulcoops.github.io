@@ -4,16 +4,16 @@ body, article, section, header, footer, .examples { display: flex; }
 body, section, header, footer { flex-direction: column; }
 article, .examples { flex-wrap: wrap; }
 article, .examples { 
-	justify-content: space-around; /* support for older versions */
+	justify-content: space-around; /* support for older browsers */
 	justify-content: space-evenly; 
 }
 footer { align-items: center; }
 
-/* Position */
+/* Positioning */
 
 nav {
 	position: sticky;
-	position: -webkit-sticky; /* support for older versions */
+	position: -webkit-sticky; /* support for older browsers */
 	top: 1em;
 	text-align: right;
 	z-index: 999;
@@ -21,70 +21,65 @@ nav {
 
 .examples { z-index: -1; }
 
-/* Size */
+/* Sizes */
 
-.examples li 	{ max-width: 12em; }
-p 				{ max-width: 32em; }
-section			{ max-width: 38em; }
+.examples li { max-width: 12em; }
+p { max-width: 32em; }
+section { max-width: 38em; }
 
 /* Typography */
 
-body		{ font-size: 16px; } /* Base size: 1em */
+body { font-size: 16px; } /* Base size: 1em */
 
 @media only screen and (max-width: 320px) {
-	body		{ font-size: 14px; } /* Base size: 1em */
+	body { font-size: 14px; } /* Base size: 1em */
 }
 
-h1.massive 			{ font-size: 5.332em;  }
-h1 					{ font-size: 2.666em;  }
-h2 					{ font-size: 1.333em;  }
-h3, p, nav		 	{ font-size: 1em;  }
+h1.massive { font-size: 5.332em;  }
+h1 { font-size: 2.666em;  }
+h2 { font-size: 1.333em;  }
+h3, p, nav { font-size: 1em;  }
 
-p 			{ line-height: 1.333em; }
-h1, h2, h3 	{ line-height: 1em; }
+p { line-height: 1.333em; }
+h1, h2, h3 { line-height: 1em; }
 
+/* Scales */
 
-/* Scale */
-
-nav 		{ width: 100vw; }
+nav { width: 100vw; }
 section img { max-width: 100%; }
 
 @media only screen and (max-width: 600px) {
 	.examples li { max-width: 50%; }
 }
 
-/* Space */
+/* Spaces */
 
-article 	{ margin: 0; }
-h1, h2, h3 	{ margin: 0em; }
-p 			{ margin: 0.5em 0 1em 0; }
+article { margin: 0; }
+h1, h2, h3 { margin: 0em; }
+p { margin: 0.5em 0 1em 0; }
 
-p.detail 	{ margin: 0.5em 0; }
-#cv h2		{ margin: 1em 0 0 0; }
+p.detail { margin: 0.5em 0; }
+#cv h2 { margin: 1em 0 0 0; }
 
-section 	{ padding: 4vh 1vw; }
-nav			{ padding: 2vh; }
+section { padding: 4vh 1vw; }
+nav { padding: 2vh; }
 
-ul {
+ul { 
 	margin: 0 0 0.61803398875em 0;
 	padding: 1em;
 }
 
-nav a {
-	padding: 0.5em 1em;
-}
+nav a { padding: 0.5em 1em; }
 
 #graphic-design, section .visual { padding-bottom: 0; }
 
 @media only screen and (max-width: 600px) {
-	body 	{ margin: 0.0em; }
+	body { margin: 0.0em; }
 	section { padding: 4vh 0vw; }
 }
 
 @media (prefers-color-scheme: light) {
-	body {
-		margin: 0 .5em;
-	}
+	body { margin: 0 .5em; }
 }
 
 footer { margin-top: 8em; }

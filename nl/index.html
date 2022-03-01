@@ -188,7 +188,6 @@
 				Creatietools omvatten: include DPS Perception/Reality, Sony digital Betacam, Intergraph TDZ 2000, Silicon Graphics 320/540, Eyeon Digital Fusion, Autodesk/Kintex 3D Studio Max en Alias|Wavefront Maya.
 			</p>
 
-
 		</section>
 	</article>
 
@@ -230,8 +229,8 @@
 			<p class="detail">Deze pagina wordt gehost op GitHub. <a href="https://github.com/paulcoops/paulcoops.github.io">Bekijk de bron</a></p>
 		</section>
 	</footer>
-<!-- Custom scripts -->
 
+<!-- Custom scripts -->
 <!-- randomize image size, z-depth and parallax speed -->
 <script type="text/javascript">
 	let examples = document.querySelectorAll(".visual ul li");
@@ -241,6 +240,7 @@
 		let randomSize = random * random;
 		let randomSpeed = randomSize * randomSize * randomSize;
 		let zIndex = Math.round(random * 100);
+
 		image.className = "rellax";
 		image.setAttribute("data-rellax-speed", randomSpeed);
 		image.setAttribute("data-rellax-percentage", randomSpeed);
@@ -249,9 +249,11 @@
 	});
 </script>
 
+<!-- reset parallax and fade-in on complete -->
 <script type="text/javascript">
 	let body = document.getElementsByTagName("BODY")[0];
 	var rellax = new Rellax('.rellax');
+
 	document.onreadystatechange = function () {
 		if (document.readyState === 'complete') {
 			rellax.refresh(); 

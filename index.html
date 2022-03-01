@@ -161,7 +161,6 @@
 				Clients include ASICS global, Onitsuka Tiger (silver cyber Lion at Cannes), adidas Benelux, ABN AMRO, AJAX, Philips, Expert, Mexx, VNU Sp!ts, Pfizer, Soa Aids Nederland, Venz/Heinz, Red Bull, Sourcy Vitaminwater, Pepsico, Heineken, Amstel, ING, Zwitserleven, Manpower, BMW motors, Yamaha Motors Europe and Kia Motors Nederland. 
 			</p>
 
-
 			<h2>Founder Outlander Studio</h2>
 			<p>
 				<strong>At Outlander Paul directed and produced music videos and multimedia productions with a focus on 3D motion graphics.</strong>
@@ -226,7 +225,6 @@
 	</footer>
 <!-- Custom scripts -->
 
-
 <!-- randomize image size, z-depth and parallax speed -->
 <script type="text/javascript">
 	let examples = document.querySelectorAll(".visual ul li");
@@ -236,6 +234,7 @@
 		let randomSize = random * random;
 		let randomSpeed = randomSize * randomSize * randomSize;
 		let zIndex = Math.round(random * 100);
+
 		image.className = "rellax";
 		image.setAttribute("data-rellax-speed", randomSpeed);
 		image.setAttribute("data-rellax-percentage", randomSpeed);
@@ -248,6 +247,7 @@
 <script type="text/javascript">
 	let body = document.getElementsByTagName("BODY")[0];
 	var rellax = new Rellax('.rellax');
+	
 	document.onreadystatechange = function () {
 		if (document.readyState === 'complete') {
 			rellax.refresh(); 
