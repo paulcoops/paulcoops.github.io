@@ -1,0 +1,120 @@
+html {
+	font-family: 'Inter', sans-serif;
+	font-size: 12pt;
+}
+body {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	flex-wrap: wrap;
+	margin: 0;
+}
+::selection {
+  color: black;
+  background: #FFD300;
+}
+a {
+	color: #0087BD;
+}
+a:visited{
+	color: #7C5582;
+}
+table td:first-of-type{
+	color: #FFD300;
+}
+#header #profile
+{
+	background-color: rgb(222,222,222);
+	background-size: cover;
+	background-position: center;
+	margin: 1em;
+	margin-top: 8em;
+	width: 8em;
+	height: 8em;
+	border-radius: 50%;
+}
+#header article {
+	display: flex;
+	flex-direction: column;
+	line-height: 2em;
+}
+address {
+	line-height: 1.2em;
+}
+#profile {
+	width: 4em;
+	height: 4em;
+}
+article {
+	max-width: 48em;
+}
+article h1 {
+	font-weight: 200;
+}
+#content article {
+	margin-top: 4em;
+}
+article h1 strong {
+	font-weight: 600;
+}
+h1 {
+	font-size: 2em;
+	margin: 0;
+}
+
+h2, h2, h3, h4, section h1 {
+	font-size: 1em;
+	margin: 0;
+}
+h3, h4 {
+	font-weight: 400;
+}
+p {
+	font-size: 1em;
+}
+p, table, address {
+	margin: 1em 0em;
+}
+table {
+	border-spacing: 1em 0em;
+}
+nav {
+	position: sticky;
+	max-width: 48em;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: white;
+	border-radius: 0 0 1em 1em;
+}
+nav a {
+	text-decoration: none;
+	margin: 2em 1em 1em 1em;
+}
+nav a strong {
+	font-weight: 600;
+}
+article {
+	margin: 1em;
+}
+section {
+	margin: 1em;
+}
+.centered {
+	align-self: center;
+}
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: rgb(10,10,10);
+}
+.grid .item {
+	height: 24em;
+	min-width: 24em;
+	flex: 1 0 auto;
+	background-position: center;
+	background-size: cover;
+	margin: 1px;
+	border-radius: 2px;
+}
